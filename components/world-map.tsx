@@ -21,8 +21,8 @@ const countries: CountryMarker[] = [
     name: "Toronto",
     nameJa: "トロント",
     href: "https://toronto-info.vercel.app/",
-    x: 80,
-    y: 30,
+    x: 82,
+    y: 39,
     direction: "right", // PC: Right
     mobileDirection: "left", // Mobile: Left
   },
@@ -31,10 +31,37 @@ const countries: CountryMarker[] = [
     name: "Thailand",
     nameJa: "タイ",
     href: "/thailand",
-    x: 36,
-    y: 52,
-    direction: "right", // Right
+    x: 35,
+    y: 58,
+    direction: "left", // Left
     // No mobile override -> same as direction
+  },
+  {
+    id: "philippines",
+    name: "Philippines",
+    nameJa: "フィリピン",
+    href: "/philippines",
+    x: 41,
+    y: 59,
+    direction: "right",
+  },
+  {
+    id: "uk",
+    name: "United Kingdom",
+    nameJa: "イギリス",
+    href: "/uk",
+    x: 8,
+    y: 34,
+    direction: "right",
+  },
+  {
+    id: "australia",
+    name: "Australia",
+    nameJa: "オーストラリア",
+    href: "/australia",
+    x: 45,
+    y: 77,
+    direction: "right",
   },
 ]
 
@@ -42,13 +69,14 @@ export function WorldMap() {
   const [hoveredCountry, setHoveredCountry] = useState<string | null>(null)
 
   return (
-    <div className="relative w-full h-full">
+    <div className="relative w-full">
       {/* World Map Image */}
       <Image
-        src="/images/world-map.jpg"
+        src="/images/World_Map.png"
         alt="World Map"
-        fill
-        className="object-contain"
+        width={2784}
+        height={1536}
+        className="w-full h-auto"
         priority
       />
 

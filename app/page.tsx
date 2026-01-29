@@ -36,7 +36,7 @@ export default function Home() {
         </div>
 
         {/* Map Container */}
-        <div className="relative w-full max-w-[90rem] aspect-[2/1] rounded-2xl overflow-hidden shadow-xl border border-border/50 bg-white">
+        <div className="relative w-full max-w-[90rem] rounded-2xl overflow-hidden shadow-xl border border-border/50 bg-white">
           <WorldMap />
         </div>
 
