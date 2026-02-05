@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import { useState } from "react"
+// import { useState } from "react"
 
 interface CountryMarker {
   id: string
@@ -66,7 +66,7 @@ const countries: CountryMarker[] = [
 ]
 
 export function WorldMap() {
-  const [hoveredCountry, setHoveredCountry] = useState<string | null>(null)
+  // const [hoveredCountry, setHoveredCountry] = useState<string | null>(null)
 
   return (
     <div className="relative w-full">
@@ -107,14 +107,14 @@ export function WorldMap() {
               left: `${country.x}%`,
               top: `${country.y}%`,
             }}
-            onMouseEnter={() => setHoveredCountry(country.id)}
-            onMouseLeave={() => setHoveredCountry(null)}
+          // onMouseEnter={() => setHoveredCountry(country.id)}
+          // onMouseLeave={() => setHoveredCountry(null)}
           >
             {/* Container for Dot, Line, and Label */}
             <div className="relative flex items-center justify-center">
 
               {/* 1. The Dot (Anchored at center) */}
-              <div className="relative w-3 h-3 md:w-4 md:h-4 z-20">
+              <div className="relative w-2.5 h-2.5 md:w-3 md:h-3 z-20">
                 <span className="absolute inset-0 rounded-full bg-pink-500 animate-ping opacity-75" />
                 <span className="absolute inset-0 rounded-full bg-pink-500 shadow-[0_0_10px_rgba(236,72,153,0.8)]" />
               </div>
@@ -132,15 +132,15 @@ export function WorldMap() {
               >
                 {/* Connecting Line */}
                 <div
-                  className="w-8 md:w-16 h-[3px] bg-black shadow-sm origin-center"
+                  className="w-6 md:w-12 h-[3px] bg-black shadow-sm origin-center"
                 />
 
                 {/* Label */}
                 <div
                   className={`
-                  whitespace-nowrap px-3 py-1 md:px-5 md:py-2 bg-white/90 backdrop-blur-sm 
+                  whitespace-nowrap px-2 py-0.5 md:px-4 md:py-1.5 bg-white/90 backdrop-blur-sm 
                   border border-pink-200 shadow-lg rounded-full
-                  text-xs md:text-xl font-bold text-pink-600
+                  text-[10px] md:text-base font-bold text-pink-600
                   transition-all duration-300
                 `}
                 >

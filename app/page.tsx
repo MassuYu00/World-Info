@@ -27,16 +27,16 @@ export default function Home() {
       <div className="flex flex-col items-center justify-start md:justify-center min-h-screen px-4 pt-24 pb-12 md:py-24">
         {/* Title Section */}
         <div className="text-center mb-8 md:mb-10">
-          <h2 className="text-2xl md:text-4xl font-bold text-foreground mb-3 text-balance">
+          <h2 className="text-xl md:text-3xl font-bold text-foreground mb-3 text-balance">
             世界の掲示板へようこそ
           </h2>
-          <p className="text-muted-foreground text-base md:text-lg">
+          <p className="text-muted-foreground text-sm md:text-base">
             ボタンを押して掲示板を使う
           </p>
         </div>
 
         {/* Map Container */}
-        <div className="relative w-full max-w-[90rem] rounded-2xl overflow-hidden shadow-xl border border-border/50 bg-white">
+        <div className="relative w-full max-w-5xl rounded-2xl overflow-hidden shadow-xl border border-border/50 bg-white">
           <WorldMap />
         </div>
 
