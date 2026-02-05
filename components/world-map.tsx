@@ -2,7 +2,6 @@
 
 import Image from "next/image"
 import Link from "next/link"
-// import { useState } from "react"
 
 interface CountryMarker {
   id: string
@@ -66,7 +65,6 @@ const countries: CountryMarker[] = [
 ]
 
 export function WorldMap() {
-  // const [hoveredCountry, setHoveredCountry] = useState<string | null>(null)
 
   return (
     <div className="relative w-full">
@@ -107,8 +105,6 @@ export function WorldMap() {
               left: `${country.x}%`,
               top: `${country.y}%`,
             }}
-          // onMouseEnter={() => setHoveredCountry(country.id)}
-          // onMouseLeave={() => setHoveredCountry(null)}
           >
             {/* Container for Dot, Line, and Label */}
             <div className="relative flex items-center justify-center">

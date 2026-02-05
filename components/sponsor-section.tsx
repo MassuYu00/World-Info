@@ -1,6 +1,5 @@
 "use client"
 
-// import Image from "next/image"
 import Link from "next/link"
 
 interface Sponsor {
@@ -40,7 +39,7 @@ const sponsors: Sponsor[] = [
 
 export function SponsorSection() {
     return (
-        <section className="w-full py-4 bg-muted/30">
+        <section className="w-full py-2 bg-muted/30 rounded-xl">
             <div className="max-w-7xl mx-auto px-4">
 
                 {/* Grid Layout: 2 cols mobile, 4 cols desktop */}
@@ -56,7 +55,7 @@ export function SponsorSection() {
                                 <span className="text-sm">Banner Space</span>
                             </div>
 
-                            <div className="p-4 bg-background">
+                            <div className="p-2 bg-background">
                                 <p className="font-semibold text-sm truncate">{sponsor.name}</p>
                                 <p className="text-xs text-muted-foreground mt-1">Check it out</p>
                             </div>
